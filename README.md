@@ -4,4 +4,4 @@
 HomeWork
 
 
-[lesson_12](https://heiiyeah.github.io/ "My HW") - Repository HW
+[lesson_12](https://heIIyeah.github.io/HW_12/ "My HW") - Repository HW
