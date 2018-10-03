@@ -1,0 +1,6 @@
+.col-xl-10,
+.col-xl-4 {
+ height: 200px;
+ background: gray;
+ margin-top: 40px;
+}

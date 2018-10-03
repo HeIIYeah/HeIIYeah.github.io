@@ -1,0 +1,56 @@
+@btn-default-bg: #e0e0e0;
+@btn-default-color: #333;
+@btn-info-bg: #3b83c0;
+@btn-info-color: #fff;
+@btn-secondary-bg: #404245;
+@btn-secondary-color: #fff;
+
+@btn-default-hover-bg: #e8e8e8;
+@btn-default-hover-color: #333;
+@btn-info-hover-bg: #458ac6;
+@btn-info-hover-color: #fff;
+@btn-secondary-hover-bg: #1b1c1d;
+@btn-secondary-hover-color: #fff;
+
+@size: 3;
+
+.rule(@type;@bg;@color) {
+	.btn-@{type} {
+		background: @bg;
+		color: @color;
+		width: 70px*@size;
+		border-radius: 1px*@size;
+	}
+}
+
+@hover: ~":hover";
+
+.rule(info;@btn-info-bg;@btn-info-color);
+.rule(default;@btn-default-bg;@btn-default-color);
+.rule(secondary;@btn-secondary-bg;@btn-secondary-color);
+
+.rule(info-row~":hover";@btn-info-hover-bg;@btn-info-hover-color);
+.rule(default-row@hover;@btn-default-hover-bg;@btn-default-hover-color);
+.rule(secondary-row@hover;@btn-secondary-hover-bg;@btn-secondary-hover-color);
+
+body {
+	background: gray;
+}
+
+@color: red;
+@color-dark: darken(@color,25%);
+@color-light: lighten(@color,25%);
+
+a {
+	&:link	{
+		color: @color-dark;
+	}
+	&:hover {
+		color: @color-light;
+	}
+}
+
+
+
+
+
