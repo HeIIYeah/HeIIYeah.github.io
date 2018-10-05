@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Bebas';
+    src: url('subset-Bebas.eot');
+    src: url('subset-Bebas.eot?#iefix') format('embedded-opentype'),
+        url('subset-Bebas.woff2') format('woff2'),
+        url('subset-Bebas.woff') format('woff'),
+        url('subset-Bebas.ttf') format('truetype'),
+        url('subset-Bebas.svg#Bebas') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
