@@ -1,3 +1,12 @@
+@import url(../css/fonts.css);
+
+.reg() {
+ font-family: "ProximaNova_reg", sans-serif;
+}
+.bold() {
+ font-family: "ProximaNova_bold", sans-serif;;
+}
+
 //colors//
 
 @btn-color: #feb403;
@@ -8,25 +17,115 @@
 
 html {
  font-size: 10px;
-}
-.button {
- background: @btn-color;
- color: @light;
- padding: 1rem 3rem;
- border-radius: 8px;
-text-transform: uppercase;
-border: none;
+ }
+
+body {
+ .reg();
 }
 
-.section {
- padding: 10rem 0;
+.button {
+ padding: 1.5rem 3rem;
+ border-radius: 8px;
+ background: @btn-color;
+ color: @light;
+ text-transform: uppercase;
+ border: none;
+ font-size: 1.2rem;
 }
+
 
 //main
 
-main {
- padding: 3rem;
+.main {
+ width: 100%;
+ min-height: 70rem;
+ padding: 3rem 0 5rem;
+ background: #fff url(../img/main-bg.jpg) center center no-repeat;
+ background-size: cover; 
+ &-content {
+ margin-top: 9rem;
+
+ h1 {
+  .bold();
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.45;
+  font-stretch: extra-expanded;
+  letter-spacing: 0.05rem;
+ }
 }
+&-subtitle {
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-align-last: left;
+  padding-bottom: 4.4rem;
+  line-height: 1.2;
+ }
+ &-title {
+  span {
+  display: inline-block;
+  padding: 1.6rem 4.6rem;
+  background: @icons-color;
+  font-size: 1.8rem;
+  color: @light;
+  text-align: center;
+  big {
+   .reg();
+   font-size: 3rem;
+  }
+ }
+ }
+ &-trigger{
+  display: block;
+  margin-top: 3rem;
+  .bold();
+  text-transform: uppercase;
+  font-size: 2.2rem;
+ }
+ &-form {
+  padding: 5rem;
+  background: @light;
+  .reg();
+  text-align: center;
+  h3 {
+   padding-bottom: 2rem;
+  }
+  input {
+   width: 100%;
+   padding: 2rem;
+   border-radius: 5px;
+   border-width: 1px;
+   border-color:  #dddddd;
+   border-style: solid;
+   margin-bottom: 2rem;
+  }
+  span {
+   display: inline-block;
+   font-family: ProximaNova_reg;
+   color:  #565656;
+   font-size: 1.3rem;/* Приближение из-за подстановки шрифтов */
+   font-weight: 700;
+   background: #fff;
+   transform: translateY(50%); 
+  }
+  button {
+   .bold();
+   width: 100%;
+   font-size: 1.6rem;
+   padding: 2rem 4rem;
+   margin-bottom: 1.5rem;
+  }
+  small {
+   .reg();
+   color:  #565656;
+   font-size: 1.2rem;/* Приближение из-за подстановки шрифтов */
+   font-weight: 400;
+  }
+ }
+}
+
 .header {
  height: 7rem;
 }
@@ -41,11 +140,20 @@ main {
  }
 }
 
+.phone {
+ text-align: right;
+}
+
 .phone-link {
  display: inline-block;
- color: @text;
  font-weight: 900;
  font-size: 2rem;
  height: 7rem;
  line-height: 7rem;
+ color: @text;
+ .bold();
 }
+
+
+
+

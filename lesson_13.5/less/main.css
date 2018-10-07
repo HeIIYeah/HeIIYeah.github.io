@@ -1,19 +1,106 @@
+@import url(../css/fonts.css);
 html {
   font-size: 10px;
 }
+body {
+  font-family: "ProximaNova_reg", sans-serif;
+}
 .button {
+  padding: 1.5rem 3rem;
+  border-radius: 8px;
   background: #feb403;
   color: #fff;
-  padding: 1rem 3rem;
-  border-radius: 8px;
   text-transform: uppercase;
   border: none;
+  font-size: 1.2rem;
 }
-.section {
-  padding: 10rem 0;
+.main {
+  width: 100%;
+  min-height: 70rem;
+  padding: 3rem 0 5rem;
+  background: #fff url(../img/main-bg.jpg) center center no-repeat;
+  background-size: cover;
 }
-main {
-  padding: 3rem;
+.main-content {
+  margin-top: 9rem;
+}
+.main-content h1 {
+  font-family: "ProximaNova_bold", sans-serif;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.45;
+  font-stretch: extra-expanded;
+  letter-spacing: 0.05rem;
+}
+.main-subtitle {
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-align-last: left;
+  padding-bottom: 4.4rem;
+  line-height: 1.2;
+}
+.main-title span {
+  display: inline-block;
+  padding: 1.6rem 4.6rem;
+  background: #70c849;
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+}
+.main-title span big {
+  font-family: "ProximaNova_reg", sans-serif;
+  font-size: 3rem;
+}
+.main-trigger {
+  display: block;
+  margin-top: 3rem;
+  font-family: "ProximaNova_bold", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+}
+.main-form {
+  padding: 5rem;
+  background: #fff;
+  font-family: "ProximaNova_reg", sans-serif;
+  text-align: center;
+}
+.main-form h3 {
+  padding-bottom: 2rem;
+}
+.main-form input {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #dddddd;
+  border-style: solid;
+  margin-bottom: 2rem;
+}
+.main-form span {
+  display: inline-block;
+  font-family: ProximaNova_reg;
+  color: #565656;
+  font-size: 1.3rem;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  background: #fff;
+  transform: translateY(50%);
+}
+.main-form button {
+  font-family: "ProximaNova_bold", sans-serif;
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 2rem 4rem;
+  margin-bottom: 1.5rem;
+}
+.main-form small {
+  font-family: "ProximaNova_reg", sans-serif;
+  color: #565656;
+  font-size: 1.2rem;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
 }
 .header {
   height: 7rem;
@@ -27,11 +114,15 @@ main {
   display: table-cell;
   vertical-align: middle;
 }
+.phone {
+  text-align: right;
+}
 .phone-link {
   display: inline-block;
-  color: #292929;
   font-weight: 900;
   font-size: 2rem;
   height: 7rem;
   line-height: 7rem;
+  color: #292929;
+  font-family: "ProximaNova_bold", sans-serif;
 }
