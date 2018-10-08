@@ -14,6 +14,10 @@ body {
   border: none;
   font-size: 1.2rem;
 }
+.button:hover {
+  cursor: pointer;
+  background: #cd9101;
+}
 .main {
   width: 100%;
   min-height: 70rem;
@@ -37,7 +41,6 @@ body {
 .main-subtitle {
   font-size: 2.4rem;
   font-weight: 400;
-  text-align-last: left;
   padding-bottom: 4.4rem;
   line-height: 1.2;
 }
@@ -71,12 +74,13 @@ body {
 }
 .main-form input {
   width: 100%;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 5px;
   border-width: 1px;
   border-color: #dddddd;
   border-style: solid;
   margin-bottom: 2rem;
+  font-size: 1.5rem;
 }
 .main-form span {
   display: inline-block;
@@ -88,7 +92,7 @@ body {
   background: #fff;
   transform: translateY(50%);
 }
-.main-form button {
+.main-form .button {
   font-family: "ProximaNova_bold", sans-serif;
   width: 100%;
   font-size: 1.6rem;
@@ -114,6 +118,11 @@ body {
   display: table-cell;
   vertical-align: middle;
 }
+input:focus,
+a:focus,
+button:focus {
+  outline: none;
+}
 .phone {
   text-align: right;
 }
@@ -125,4 +134,68 @@ body {
   line-height: 7rem;
   color: #292929;
   font-family: "ProximaNova_bold", sans-serif;
+}
+.phone-link:hover {
+  text-decoration: none;
+}
+@media (max-width: 1199px) {
+  .phone {
+    text-align: center;
+  }
+  .main {
+    height: 105rem;
+    background-position: top right 0;
+  }
+  .main-content {
+    margin-top: 3rem;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  .main-title {
+    text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  .phone {
+    text-align: center;
+  }
+  .main {
+    height: 105rem;
+    background-position: top right 0;
+  }
+  .main-content {
+    margin-top: 3rem;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  .main-title {
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .header {
+    text-align: center;
+  }
+  .phone {
+    text-align: center;
+  }
+  .main {
+    height: 120rem;
+    background-position: top left 0;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    text-align: center;
+  }
+  .phone {
+    text-align: center;
+  }
+  .main {
+    height: 120rem;
+    background-position: top left 0;
+  }
+  .main-trigger {
+    margin-top: 2rem;
+  }
 }
