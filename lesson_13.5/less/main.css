@@ -172,18 +172,6 @@ button:focus {
     text-align: center;
   }
 }
-@media (max-width: 575px) {
-  .header {
-    text-align: center;
-  }
-  .phone {
-    text-align: center;
-  }
-  .main {
-    height: 120rem;
-    background-position: top left 0;
-  }
-}
 @media (max-width: 767px) {
   .header {
     text-align: center;
@@ -198,7 +186,19 @@ button:focus {
   .main-trigger {
     margin-top: 2rem;
   }
+}
+@media (max-width: 575px) {
+  .header {
+    text-align: center;
+  }
+  .phone {
+    text-align: center;
+  }
+  .main {
+    height: 120rem;
+    background-position: top left 0;
+  }
   .main-title h1 {
-    font-size: 3.08rem;
+    font-size: 2rem;
   }
 }
