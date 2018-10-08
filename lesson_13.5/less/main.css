@@ -198,4 +198,7 @@ button:focus {
   .main-trigger {
     margin-top: 2rem;
   }
+  .main-title h1 {
+    font-size: 3.08rem;
+  }
 }
