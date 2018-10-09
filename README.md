@@ -17,3 +17,6 @@ HomeWork
 
 
 [lesson_15](https://heIIyeah.github.io/lesson_15// "My HW") - Repository HW
+
+
+[lesson_16](https://heIIyeah.github.io/lesson_16// "My HW") - Repository HW
