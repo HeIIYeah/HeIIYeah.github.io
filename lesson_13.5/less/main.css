@@ -120,7 +120,8 @@ body {
 }
 input:focus,
 a:focus,
-button:focus {
+button:focus,
+.col-xl-4:focus {
   outline: none;
 }
 .phone {
@@ -201,4 +202,37 @@ button:focus {
   .main-title h1 {
     font-size: 2rem;
   }
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+.prev {
+  left: 0%;
+  background: url(../img/arrow-left.svg) center no-repeat;
+  background-size: 70%;
+}
+.next {
+  right: 0%;
+  background: url(../img/arrow-right.png) center no-repeat;
+  background-size: 70%;
+}
+.feautures {
+  margin: 5rem 0;
+  text-align: center;
+  background-size: cover;
+}
+.feautures div[class*="item"] {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.feautures div[class*="item"] img {
+  max-width: 100%;
+  height: auto;
 }

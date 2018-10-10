@@ -146,7 +146,7 @@ body {
  }
 }
 
-input, a, button {
+input, a, button, .col-xl-4{
   &:focus {
     outline: none;
   }
@@ -239,6 +239,43 @@ input, a, button {
   }
 }
 
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+
+.prev {
+  left: 0%;
+  background: url(../img/arrow-left.svg) center no-repeat;
+  background-size: 70%;
+}
+
+.next {
+  right: 0%;
+  background: url(../img/arrow-right.png) center no-repeat;
+  background-size: 70%;
+}
+
+
+.feautures {
+  margin: 5rem 0;
+  text-align: center;
+  background-size: cover;
+  div[class*="item"] {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  img {
+    max-width:100%;
+    height:auto;
+  }
+  }
+}
 
 
 
