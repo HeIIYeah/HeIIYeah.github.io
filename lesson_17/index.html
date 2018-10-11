@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Document</title>
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+ 
+<div class="container">
+  <!--<a class="link" href="#my-modal" data-toggle="modal">Ссылка на модальное окно</a> -->
+  <button class="btn btn-succes" data-toggle="modal" data-target="#my-modal">Кнопка вызова модального окна</button>  
+</div>
+
+<!-- Модальное окно -->
+ <div class="modal fade" id="my-modal">
+   <!-- Белое модальное окно -->
+  <div class="modal-dialog modal-sm">
+    <!-- Содержимое модального окна -->
+    <div class="modal-content">
+      <!-- Шапка МО -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">
+          <div class="cross">
+          <img src="img/cross.svg" alt="">
+          </div>
+        </span></button>
+        <!-- Заголовок МО -->
+        <h4 class="modal-title">Be or not to be?!</h4>
+      </div>
+      <!-- Тело МО -->
+      <div class="modal-body">
+        <p>Are you sure<br>
+           that you want to delete this file?!</p>
+      </div>
+      <!-- Подвал МО -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">No, ty!</button>
+        <button type="button" class="btn btn-primary">Yeah sure</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
