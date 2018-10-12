@@ -33,7 +33,7 @@
           <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
             <div class="wrap">
               <div class="wrap-block">
-                <button type="button" class="btn button btn-header">
+                <button type="button" class="btn button btn-header popup-btn">
                   получить консультацию
                 </button>
               </div>
@@ -54,34 +54,54 @@
               </div>
             </div>
 
-            
+
             <div class="offset-xl-3 col-xl-4 col-lg-4 offset col-lg-2 col-md-8 offset-md-2 col-sm-12">
-                  <div class="main-form">
-                    <h3>Для расчета точной стоимости<br>
-                    закажите <strong>выезд замерщика</strong></h3>
-                    <span>Ваше имя</span>
-                    <input type="text">
-                    <span>Номер телефона</span>
-                    <input type="text">
-                    <button class="btn button">Оставьте заявку</button>
-                    <small>Приедем в день обращения*</small>
-                  </div>
-                </div>
+              <div class="main-form">
+                <h3>Для расчета точной стоимости<br>
+                  закажите <strong>выезд замерщика</strong></h3>
+                <span>Ваше имя</span>
+                <input type="text">
+                <span>Номер телефона</span>
+                <input type="text">
+                <button class="btn button">Оставьте заявку</button>
+                <small>Приедем в день обращения*</small>
+              </div>
+            </div>
           </div>
         </div>
 
       </div>
     </div>
+
+    <div class="popup">
+      <button class="btn close">
+        <img src="img/cross.svg" alt="">
+      </button>
+      <div class="popup-form">
+        <h3><strong>Заинтересовало?!</strong><br>
+          Оставьте контактные данные<br>
+        для связи</h3>
+        <span>Ваше имя</span>
+        <input type="text">
+        <span>Номер телефона</span>
+        <input type="text">
+        <span>Сообщение</span>
+        <textarea name="message" id="#message" cols="20" rows="4"></textarea>
+        <button class="btn button">Оставьте заявку</button>
+      </div>
+    </div>
+
+
   </main>
 
   <div class="feautures">
     <div class="container">
 
       <h3>Преимущества это скучно!!<br>
-      Посмотрите лучше на котят!!</h3>
+        Посмотрите лучше на котят!!</h3>
 
       <div class="row feautures-sidebar">
-        
+
         <div class="col-xl-4">
           <div class="item-1">
             <img src="img/1.jpg" alt="">
@@ -106,16 +126,23 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
 
-<script>
-  $(document).ready(function () {
+  <script>
+    $(document).ready(function () {
+      $('.popup-btn').on('click', function (event) {
+        event.preventDefault(); 
+        $('.popup').fadeIn();      
+      });
+      $('.close').on('click', function (event) {
+        event.preventDefault();
+        $('.popup').fadeOut();
+      })
       $('.feautures-sidebar').slick({
-         infinite: true,
-         slidesToShow: 3,
-         slidesToScroll: 3,
-         autoplay: true,
-         autoplaySpeed: 2000,
-         responsive: [
-          {
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [{
             breakpoint: 991,
             settings: {
               slidesToShow: 2,
@@ -139,10 +166,11 @@
           // settings: "unslick"
           // instead of a settings object
         ]
-         
+
       });
     });
-</script>
-  
+  </script>
+
 </body>
+
 </html>

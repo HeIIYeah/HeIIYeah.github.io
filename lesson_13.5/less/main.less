@@ -169,6 +169,74 @@ input, a, button, .col-xl-4{
  }
 }
 
+.popup {
+  display: none;
+  
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  .close {
+    display: block;
+    position: fixed;
+    left: 50%;
+    transform: translateX(20rem);
+    top: 100px;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    outline: none;
+    z-index: 99;
+  }
+
+  &-form {
+    position: relative;
+    text-align: center;
+    top: 100px;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3rem 3rem;
+    width: 40rem;
+    height: 75%;
+    background: #fff;
+    .reg();
+    h3 {
+      padding-bottom: 2rem;  
+    }
+   
+  input, textarea {
+   width: 100%;
+   padding: 1.5rem;
+   border-radius: 5px;
+   border-width: 1px;
+   border-color:  #dddddd;
+   border-style: solid;
+   margin-bottom: 2rem;
+   font-size: 1.5rem;
+  }
+  span {
+   display: inline-block;
+   font-family: ProximaNova_reg;
+   color:  #565656;
+   font-size: 1.3rem;/* Приближение из-за подстановки шрифтов */
+   font-weight: 700;
+   background: #fff;
+   transform: translateY(50%); 
+  }
+  .button {
+   .bold();
+   width: 100%;
+   font-size: 1.6rem;
+  }
+  }
+}
 
 @media (max-width: 1199px) {
   .phone {
@@ -273,6 +341,7 @@ input, a, button, .col-xl-4{
   img {
     max-width:100%;
     height:auto;
+    z-index: 0;
   }
   }
 }
