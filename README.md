@@ -23,3 +23,6 @@ HomeWork
 
 
 [lesson_17](https://heiiyeah.github.io/lesson_17/ "My HW") - Repository HW
+
+
+[lesson_18](https://heiiyeah.github.io/lesson_18/ "My HW") - Repository HW
