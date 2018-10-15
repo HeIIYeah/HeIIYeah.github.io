@@ -122,54 +122,50 @@
     </div>
   </div>
 
+
+<div class="second">
+  <div class="container">
+
+    <h1>Слайдер в слайдере!</h1>
+    <h3>(Здесь могла быть случайная картинка из Google)</h3>
+
+    <div class="row second-sidebar">
+
+      <div class="col-xl-12">
+        <div class="item-4">
+          <div class="box">
+            <div class="slider-for">
+              <div class="min-1"></div>
+              <div class="min-2"></div>
+              <div class="min-3"></div>
+            </div>
+            <div class="slider-nav">
+              <div class="min-1"></div>
+              <div class="min-2"></div>
+              <div class="min-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-12">
+        <div class="item-5">
+          <div class="box">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
 
-  <script>
-    $(document).ready(function () {
-      $('.popup-btn').on('click', function (event) {
-        event.preventDefault(); 
-        $('.popup').fadeIn();      
-      });
-      $('.close').on('click', function (event) {
-        event.preventDefault();
-        $('.popup').fadeOut();
-      })
-      $('.feautures-sidebar').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [{
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              prevArrow: '<button class="prev arrow"></button>',
-              nextArrow: '<button class="next arrow"></button>',
-              dots: true
-            }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              dots: true,
-              prevArrow: '<button class="prev arrow"></button>',
-              nextArrow: '<button class="next arrow"></button>'
-            }
-          }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
-        ]
-
-      });
-    });
-  </script>
+  <script type="text/javascript" src="js/style.js"></script>
 
 </body>
 
