@@ -146,7 +146,7 @@ body {
  }
 }
 
-input, a, button, .col-xl-4, .col-xl-12{
+input, a, button, .col-xl-4, .col-xl-12, .fotorama, .item-4, .item-5{
   &:focus {
     outline: none;
   }
@@ -238,7 +238,95 @@ input, a, button, .col-xl-4, .col-xl-12{
   }
 }
 
+.second {
+  text-align: center;
+  margin: 5rem 0;
+  background-size: cover;
+  div[class*="item"] {
+  position: relative;
+  overflow: hidden;
+  .box {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
+    height: 500px;
+    z-index: 0;
+    background:  rgba(100, 100, 100, 0.1);
+    z-index: 3;
+    text-align: center;
+    .fotorama {
+      position: absolute;
+      background: #fff;
+      height: 100%;
+      top: 0; bottom: 0; left: 0; right: 0;
+      margin: auto;
+    }
+  }
+  }
+}
+
+.slider-for {
+  padding:  5rem 3rem;
+  width: 100%;
+  .min-1 {
+    height: 250px;
+    background: red;
+  }
+  .min-2 {
+    height: 250px;
+    background: blue;
+  }
+  .min-3 {
+    height: 250px;
+    background: green;
+  }
+}
+
+.slider-nav {
+  width: 100%;
+  .min-1 {
+    margin: 0 1rem;
+    height: 50px;
+    background: red;
+  }
+  .min-2 {
+    margin: 0 1rem;
+    height: 50px;
+    background: blue;
+  }
+  .min-3 {
+    margin: 0 1rem;
+    height: 50px;
+    background: green;
+  }
+}
+
+.sheme {
+  background: #fff url(../img/hand.png) bottom -10rem right -10rem no-repeat;
+  background-size: 65rem;
+  .col-xl-3 {
+    margin-bottom: 5rem;
+  }
+  h1, h6{
+    text-align: center;
+    .bold();
+    margin-bottom: 3rem;
+  }
+  h3 {
+    .bold();
+  }
+  p {
+    .bold();
+    font-size: 1.4rem;
+  }
+}
+
+
 @media (max-width: 1199px) {
+  .offset-md-0 {
+    margin-left: 8.88888%;
+  }
   .phone {
     text-align: center;
   }
@@ -276,6 +364,9 @@ input, a, button, .col-xl-4, .col-xl-12{
 }
 
 @media (max-width: 767px) {
+  .offset-sm-0 {
+    margin-left: 0;
+  }
   .header {
     text-align: center;
   }
@@ -292,6 +383,7 @@ input, a, button, .col-xl-4, .col-xl-12{
   }
 
 @media (max-width: 575px) {
+  
   .header {
     text-align: center;
   }
@@ -304,6 +396,10 @@ input, a, button, .col-xl-4, .col-xl-12{
   }
   .main-title h1 {
     font-size: @size*0.5;
+  }
+  .sheme {
+    background: none;
+    text-align: center;
   }
 }
 
@@ -346,55 +442,6 @@ input, a, button, .col-xl-4, .col-xl-12{
   }
 }
 
-.second {
-  margin: 5rem 0;
-  background-size: cover;
-  div[class*="item"] {
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  .box {
-    width: 1000px;
-    height: 500px;
-    z-index: 0;
-    background:  rgba(100, 100, 100, 0.1);
-  }
-  }
-}
 
-.slider-for {
-  padding:  5rem 3rem;
-  .min-1 {
-    height: 250px;
-    background: red;
-  }
-  .min-2 {
-    height: 250px;
-    background: blue;
-  }
-  .min-3 {
-    height: 250px;
-    background: green;
-  }
-}
 
-.slider-nav {
-  .min-1 {
-    margin: 0 1rem;
-    width: 5px;
-    height: 50px;
-    background: red;
-  }
-  .min-2 {
-    margin: 0 1rem;
-    width: 50px;
-    height: 50px;
-    background: blue;
-  }
-  .min-3 {
-    margin: 0 1rem;
-    width: 50px;
-    height: 50px;
-    background: green;
-  }
-}
+
